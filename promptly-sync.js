@@ -12,11 +12,11 @@ module.exports = function(questions, done) {
             }
 
             var promptOpts = {
-                default: item.default || null,
-                trim: true,
-                validator: item.validator || null,
-                retry: item.retry || true,
-                silent: item.silent || false
+                default: item.default,
+                trim: item.trim,
+                validator: item.validator,
+                retry: item.retry,
+                silent: item.silent
             };
 
             var args = [item.description];
@@ -42,3 +42,7 @@ module.exports = function(questions, done) {
 };
 
 module.exports.promptly = promptly;
+module.exports.prompt = promptly.prompt;
+module.exports.password = promptly.password;
+module.exports.confirm = promptly.confirm;
+module.exports.choose = promptly.choose;
