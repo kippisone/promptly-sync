@@ -42,6 +42,7 @@ promptlySync(questions, function(err, result) {
 See [Promptly documentation](https://github.com/IndigoUnited/node-promptly) for more infos about promptly.
 
 
+
 Options
 -------
 
@@ -66,3 +67,26 @@ Options
     input       Input stream to read
 
     output      Output streams to write 
+
+
+
+API
+---
+
+`promptlySynv.noColor = true;`
+Dissable colorized output
+
+`promptlySync.promptly`
+Returns promptly
+
+`promptlySync.prompt()`
+Calls promptly.prompt
+
+`promptlySync.confirm()`
+Calls promptly.confirm
+
+`promptlySync.password()`
+Calls promptly.password
+
+`promptlySync.choose()`
+Calls promptly.choose

@@ -3,6 +3,8 @@ var expect = require('expect.js'),
     promptlySync = require('../promptly-sync.js'),
     promptly = promptlySync.promptly;
 
+promptlySync.noColor = true;
+
 describe('PromptlySync', function() {
     var promptStub,
         confirmStub,
@@ -48,7 +50,7 @@ describe('PromptlySync', function() {
         });
 
         expect(promptStub.calledTwice).to.be(true);
-        expect(promptStub.firstCall.calledWith('Make a prompt')).to.be(true);
+        expect(promptStub.firstCall.calledWith('Make a prompt (test)')).to.be(true);
         expect(promptStub.secondCall.calledWith('Make a second prompt')).to.be(true);
     });
 

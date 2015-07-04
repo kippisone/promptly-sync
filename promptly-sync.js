@@ -1,4 +1,5 @@
-var promptly = require('promptly');
+var promptly = require('promptly'),
+    chalk = require('chalk');
 
 module.exports = function(questions, done) {
     var ask = function() {
@@ -19,7 +20,17 @@ module.exports = function(questions, done) {
                 silent: item.silent
             };
 
-            var args = [item.description];
+            var description = item.description;
+
+            if (item.default) {
+                description = description + ' ' + (
+                    module.exports.noColor ?
+                    '(' + item.default + ')' :
+                    chalk.grey('(' + item.default + ')'
+                ));
+            }
+
+            var args = [description];
             if (item.type === 'choose') {
                 args.push(item.values);
             }
@@ -46,3 +57,4 @@ module.exports.prompt = promptly.prompt;
 module.exports.password = promptly.password;
 module.exports.confirm = promptly.confirm;
 module.exports.choose = promptly.choose;
+module.exports.noColor = false;
