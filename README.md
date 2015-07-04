@@ -40,5 +40,5 @@ promptlySync(questions, function(err, result) {
 });
 ```
 
-See [https://www.npmjs.com/package/promptly](Promptly documentation) for more infos about promptly.
+See [Promptly documentation](https://www.npmjs.com/package/promptly) for more infos about promptly.
 
