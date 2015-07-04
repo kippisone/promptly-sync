@@ -1,6 +1,6 @@
 {
   "name": "promptly-sync",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple commandline prompting tool",
   "main": "promptly-sync.js",
   "directories": {
