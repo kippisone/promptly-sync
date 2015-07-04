@@ -1,0 +1,33 @@
+{
+  "name": "promptly-sync",
+  "version": "0.0.1",
+  "description": "Simple commandline prompting tool",
+  "main": "promptly-sync.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "promptly": "^0.2.1",
+    "expect.js": "^0.3.1",
+    "sinon": "^1.15.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha tests/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AndiOxidant/promptly-sync"
+  },
+  "keywords": [
+    "prompt",
+    "prompting",
+    "confirm"
+  ],
+  "author": "Andi Heinkelein <andi.oxidant@noname-media.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AndiOxidant/promptly-sync/issues"
+  },
+  "homepage": "https://github.com/AndiOxidant/promptly-sync"
+}
